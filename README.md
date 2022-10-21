@@ -1,27 +1,20 @@
-# StarWarsShipRepository
+### Exercise:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
+#### Create a basic Angular app to display Star Wars ship profiles using data from https://swapi.dev/api/starships/
 
-## Development server
+- [x] Tha app name should be Star Wars Ship Repository
+- [x] The app should be comprised of a login page and a main page
+- [x] The login page should utilize a basic mock auth-service for authorization.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+> It is fine to hardcode this data (list of names, username and passwords that are granted access).
 
-## Code scaffolding
+The main page should consist of the following:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [x] title bar – span the entire width of the viewable area and contain the app name (left), logged in username (right) and an option to logout
+- [x] left pane – navigable list to select from available starships (load the first ship by default)
+- [x] right pane - custom component to render the content of the selected starship
 
-## Build
+- [x] Additional Requirement: Each starship contains a reference to film appearances (“films”). Display the name of each film under the starship profile in chronological order.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![](/doc-01.png)
+![](/doc-02.png)

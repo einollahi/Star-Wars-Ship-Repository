@@ -1,0 +1,9 @@
+<mat-form-field [appearance]="appearance" [color]="color">
+  <mat-label *ngIf="key" [ngStyle]="{ padding: icon ? '0 0 0 1.5rem' : '0' }">
+    {{ key }}
+  </mat-label>
+  <div class="ui__input">
+    <input matInput [readonly]="true" [value]="value" />
+    <mat-icon matPrefix *ngIf="icon">{{ icon }}</mat-icon>
+  </div>
+</mat-form-field>

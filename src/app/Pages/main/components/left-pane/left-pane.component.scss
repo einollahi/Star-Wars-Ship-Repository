@@ -1,0 +1,16 @@
+:host(app-left-pane) {
+  max-width: 350px;
+  width: 100%;
+}
+
+mat-selection-list {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f8f9fa;
+
+  &.mat-selection-list.mat-list-base {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}

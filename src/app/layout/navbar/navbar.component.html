@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+  <nav class="navbar">
+    <h3>Star Wars Ship Repository</h3>
+
+    <div class="user__profile" *ngIf="user?.username; else loginMode">
+      <span>
+        {{ user.username }}
+      </span>
+
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+    </div>
+    <ng-template #loginMode>
+      <button mat-raised-button color="primary" (click)="login()">Login</button>
+    </ng-template>
+  </nav>
+</mat-toolbar>
+<mat-progress-bar *ngIf="showLoader" mode="indeterminate"></mat-progress-bar>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item (click)="logout()">
+    <mat-icon>logout</mat-icon>
+    <span>Logout</span>
+  </button>
+</mat-menu>
+
+<router-outlet></router-outlet>

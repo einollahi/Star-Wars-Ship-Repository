@@ -1,0 +1,17 @@
+<mat-selection-list class="mat-elevation-z8" multiple="false">
+  <mat-list-option
+    *ngFor="let starship of starships"
+    (click)="onSelect(starship)"
+  >
+    {{ starship.name }}
+  </mat-list-option>
+</mat-selection-list>
+
+<mat-paginator
+  #paginator
+  [length]="totalCount"
+  [pageIndex]="pageIndex"
+  [pageSize]="10"
+  (page)="changePagination($event)"
+>
+</mat-paginator>

@@ -1,0 +1,27 @@
+mat-toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+
+  nav.navbar {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .user__profile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+mat-progress-bar {
+  position: absolute;
+  height: 10px;
+  top: 0;
+  z-index: 999;
+}

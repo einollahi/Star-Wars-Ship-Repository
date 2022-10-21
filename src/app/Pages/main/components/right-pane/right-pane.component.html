@@ -1,0 +1,21 @@
+<mat-card class="mat-elevation-z8">
+  <mat-card-header>
+    <mat-card-title>{{ starship.name }}</mat-card-title>
+  </mat-card-header>
+  <mat-divider [inset]="true" style="margin-bottom: 1.5rem"></mat-divider>
+  <div *ngIf="films" style="display: flex; flex-direction: column">
+    <h3>movies</h3>
+    <mat-card *ngFor="let film of films">{{ film.title }}</mat-card>
+  </div>
+  <mat-divider [inset]="true" style="margin-bottom: 1.5rem"></mat-divider>
+  <mat-card-content>
+    <mat-list role="list">
+      <mat-list-item *ngFor="let key of starshipKeys" role="listitem">
+        <app-key-value
+          [key]="key"
+          [value]="getStarshipValue(key)"
+        ></app-key-value
+      ></mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

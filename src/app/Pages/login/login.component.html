@@ -1,0 +1,24 @@
+<mat-card class="login__card mat-elevation-z8">
+  <mat-card-title><mat-icon>login</mat-icon> Login</mat-card-title>
+  <mat-divider [inset]="true"></mat-divider>
+  <mat-card-content [formGroup]="loginForm">
+    <app-input formControlName="username" label="Username"></app-input>
+    <app-input
+      formControlName="password"
+      type="password"
+      label="Password"
+      type="password"
+    ></app-input>
+  </mat-card-content>
+  <mat-card-actions>
+    <button
+      mat-raised-button
+      class="login__btn"
+      color="primary"
+      (click)="login()"
+      [disabled]="loginForm.invalid"
+    >
+      Login
+    </button>
+  </mat-card-actions>
+</mat-card>

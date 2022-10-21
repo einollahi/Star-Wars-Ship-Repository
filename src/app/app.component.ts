@@ -2,9 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template:
+    '<router-outlet></router-outlet><notifier-container></notifier-container>',
 })
-export class AppComponent {
-  title = 'star-wars-ship-repository';
-}
+export class AppComponent {}
