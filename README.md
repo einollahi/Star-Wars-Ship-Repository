@@ -1,5 +1,22 @@
 ### Exercise:
 
+```js
+users: [
+  {
+    username: "admin",
+    password: "admin",
+  },
+  {
+    username: "ali",
+    password: "123456",
+  },
+  {
+    username: "john",
+    password: "smith",
+  },
+];
+```
+
 #### Create a basic Angular app to display Star Wars ship profiles using data from https://swapi.dev/api/starships/
 
 - [x] Tha app name should be Star Wars Ship Repository
